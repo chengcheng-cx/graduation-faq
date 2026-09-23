@@ -1,0 +1,12 @@
+# Python 虛擬環境
+.venv/
+
+# MkDocs 建置結果
+site/
+
+# Python 快取
+__pycache__/
+*.pyc
+
+# Obsidian 個人設定
+.obsidian/

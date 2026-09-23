@@ -1,0 +1,26 @@
+site_name: 研究所畢業資訊 FAQ
+site_description: 研究所畢業相關資訊與常見問題整理
+
+theme:
+  name: material
+  language: zh-TW
+
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - 首頁: index.md
