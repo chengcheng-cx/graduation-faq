@@ -37,7 +37,7 @@
 ✨趣味團體照拍攝
 ✨師長正式團照拍攝
 
-🔴畢業照作品&服務 (Sample Graduation Photos) ：https://reurl.cc/jVVEDq
+🔴畢業照作品&服務 (Sample Graduation Photos) ：<https://reurl.cc/jVVEDq>
 
 🖊️填表時間 (Deadline for Submission) ：即日起至 10/02
 🖊️請每位同學都記得填寫唷！
