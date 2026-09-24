@@ -26,9 +26,7 @@ markdown_extensions:
 
 nav:
   - 首頁: index.md
-  - 常用網址:
-      - links/index.md
-      - 學位服訂購_碩士:(https://forms.gle/YZNvFx9otz4wtPqs5)
+  - 常用網址: links/links.md
 
 extra_javascript:
   - javascripts/external-links.js
