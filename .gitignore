@@ -10,3 +10,9 @@ __pycache__/
 
 # Obsidian 個人設定
 .obsidian/
+
+# Windows / cloud-sync folder metadata
+desktop.ini
+
+# Machine-specific Python environments
+.venv*/
