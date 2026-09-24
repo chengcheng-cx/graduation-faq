@@ -94,7 +94,7 @@ try {
             Write-Host 'Files to upload:'
             $staged | ForEach-Object { Write-Host "  $_" }
             if ($branch -eq 'main') {
-                $branch = 'draft/' + (Get-Date -Format 'yyyyMMdd-HHmmss')
+                $branch = 'draft-' + (Get-Date -Format 'yyyyMMdd-HHmmss')
                 Invoke-Checked 'git' @('switch', '-c', $branch)
             }
 
