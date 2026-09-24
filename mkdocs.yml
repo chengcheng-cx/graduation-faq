@@ -26,7 +26,9 @@ markdown_extensions:
 
 nav:
   - 首頁: index.md
-  - 常用網址: links/links.md
+  - 常用網址:
+      - links/index.md
+      - 訂購網站: https://docs.google.com/forms/d/e/1FAIpQLSfigaZEGt4SE57JOXiF9-oLusy4qgXGmEVtma_jCFoO7RRFgg/viewform
 
 extra_javascript:
   - javascripts/external-links.js
