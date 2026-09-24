@@ -34,7 +34,12 @@ function Initialize-Environment {
         $created = $false
         foreach ($candidate in $candidates) {
             if (-not (Get-Command $candidate.Command -ErrorAction SilentlyContinue)) { continue }
-            & $candidate.Command @($candidate.Arguments) -c 'import sys; sys.exit(sys.version_info < (3, 12))' *> $null
+            # Windows PowerShell treats a missing py version's stderr as a terminating error.
+            # Try the next installed Python candidate instead.
+            try {
+                & $candidate.Command @($candidate.Arguments) -c 'import sys; sys.exit(sys.version_info < (3, 12))' *> $null
+            }
+            catch { continue }
             if ($LASTEXITCODE -ne 0) { continue }
             Invoke-Checked $candidate.Command (@($candidate.Arguments) + @('-m', 'venv', $venvDir))
             $created = $true
