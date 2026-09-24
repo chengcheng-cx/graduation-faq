@@ -10,6 +10,8 @@ $localDir = Join-Path $env:USERPROFILE '.graduation-faq'
 $venvDir = Join-Path $localDir 'venv'
 $pythonExe = Join-Path $venvDir 'Scripts\python.exe'
 $siteDir = Join-Path $localDir 'site'
+# This project pins MkDocs 1.6.1; suppress Material's MkDocs 2.0 notice.
+$env:NO_MKDOCS_2_WARNING = '1'
 Set-Location -LiteralPath $projectDir
 
 function Invoke-Checked {
