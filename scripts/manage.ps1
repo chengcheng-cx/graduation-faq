@@ -32,7 +32,7 @@ function Initialize-Environment {
         $created = $false
         foreach ($candidate in $candidates) {
             if (-not (Get-Command $candidate.Command -ErrorAction SilentlyContinue)) { continue }
-            & $candidate.Command @($candidate.Arguments) --version *> $null
+            & $candidate.Command @($candidate.Arguments) -c 'import sys; sys.exit(sys.version_info < (3, 12))' *> $null
             if ($LASTEXITCODE -ne 0) { continue }
             Invoke-Checked $candidate.Command (@($candidate.Arguments) + @('-m', 'venv', $venvDir))
             $created = $true
@@ -41,7 +41,8 @@ function Initialize-Environment {
         if (-not $created) { throw 'Python was not found. Install Python 3.12 or newer.' }
     }
 
-    Invoke-Checked $pythonExe @('-m', 'pip', 'install', '--disable-pip-version-check', '-r', 'requirements.txt')
+    Write-Host 'Installing or checking website dependencies...'
+    Invoke-Checked $pythonExe @('-m', 'pip', 'install', '--quiet', '--disable-pip-version-check', '-r', 'requirements.txt')
     Invoke-Checked 'git' @('config', '--local', 'core.hooksPath', '.githooks')
     Write-Host "Python environment: $venvDir"
 }
@@ -115,6 +116,6 @@ try {
     }
 }
 catch {
-    Write-Error $_
+    Write-Host "[ERROR] $($_.Exception.Message)" -ForegroundColor Red
     exit 1
 }
