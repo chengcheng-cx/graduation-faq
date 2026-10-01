@@ -14,6 +14,7 @@
 
 - [常見問題](#faq)
 - [重要日程](#important-dates)
+- [匯款資訊](#remit)
 - [畢業照報名](#photo-registration)
 - [學位服訂購](#gown-order)
 - [畢代簡報](#presentation)
@@ -110,6 +111,21 @@
 
 ---
 ## **常用資訊**
+
+### 0. 匯款資訊 {#remit}
+
+請先至明細網頁確認自己的訂單是否正確，無問題可將所需金額匯款給畢代，匯款資訊如下：
+
+銀行代碼：700
+匯款帳號：04014170129837
+
+![畢業流程圖](images/郵局帳戶資訊.jpg)
+
+匯款時請備註您的姓名，方能讓畢代核對資訊，或是在群組 @招誠 說明已匯款。
+
+並確認畢代是否已在表單將您的資訊打勾表示已收款
+
+收款表單 ： <https://docs.google.com/spreadsheets/d/1Aj220JBDCAO9qLxXv8bgd1tW1HPU-Be2/edit?usp=sharing&ouid=102014184095251998928&rtpof=true&sd=true>
 
 ### 1. 畢業照報名表單 {#photo-registration}
 
