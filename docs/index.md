@@ -114,6 +114,10 @@
 
 ### 0. 匯款資訊 {#remit}
 
+學位服租借明細：<https://docs.google.com/spreadsheets/d/e/2PACX-1vQJ82GnJUMZ2iOqCFva5V1Zw8LnDuM06DSLrt2oyZlGNGwzTf43C4MQ5jDoG6gkeuNB8LnLI0BCkORO/pubhtml?gid=1621427280&single=true>
+
+畢業照方案明細：<https://docs.google.com/spreadsheets/d/1bfQaxR-8iVuTx3tY0t51gtxomUjRplEn/edit?usp=drivesdk&ouid=102014184095251998928&rtpof=true&sd=true>
+
 請先至明細網頁確認自己的訂單是否正確，無問題可將所需金額匯款給畢代，匯款資訊如下：
 
 銀行代碼：700
